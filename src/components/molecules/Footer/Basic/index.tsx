@@ -1,4 +1,5 @@
 import { Layout } from 'antd';
+
 import Styles from './index.module.scss';
 import { BasicFooterProps } from './types';
 

@@ -1,5 +1,6 @@
-import React from "react";
-import { ProductsContextProviderProps } from "./types";
+import React from 'react';
+
+import { ProductsContextProviderProps } from './types';
 
 export const ProductsContext = React.createContext<ProductsContextProviderProps>({});
 

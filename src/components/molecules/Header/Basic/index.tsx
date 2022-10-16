@@ -1,7 +1,8 @@
-import React from "react";
-import { BasicHeaderProps } from "./types";
+import { Layout } from 'antd';
+import React from 'react';
+
 import Styles from './index.module.scss';
-import { Layout } from "antd";
+import { BasicHeaderProps } from './types';
 
 export const BasicHeader = (props: BasicHeaderProps) => {
   return (
