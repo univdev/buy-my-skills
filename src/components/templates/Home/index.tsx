@@ -1,16 +1,31 @@
+import { Col, Layout, Row } from 'antd';
 import { BasicFooter } from 'components/molecules/Footer/Basic';
 import { BasicHeader } from 'components/molecules/Header/Basic';
+import React from 'react';
+import { classNames } from 'utils/common';
 
-import { ProductsContextProvider } from './context/Products';
+import Styles from './index.module.scss';
 
-export const HomeTemplate = () => {
+export const HomeTemplate: React.FC = () => {
   return (
-    <ProductsContextProvider>
+    <div
+      className={Styles.HomeTemplate}
+    >
       <BasicHeader />
-      <Layout.Content>
-        Good!
+      <Layout.Content
+        className={classNames(
+          Styles.Content
+        )}
+      >
+        <div className={Styles.Container}>
+          <Row gutter={16}>
+            <Col lg={8}>qwe</Col>
+            <Col lg={8}>qwe</Col>
+            <Col lg={8}>qwe</Col>
+          </Row>
+        </div>
       </Layout.Content>
       <BasicFooter />
-    </ProductsContextProvider>
+    </div>
   );
 };
