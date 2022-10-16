@@ -1,10 +1,10 @@
 import { HomeTemplate } from 'components/templates/Home';
 import React from 'react';
 
-export function Index() {
+export const Index = () => {
   return (
     <HomeTemplate />
   );
-}
+};
 
 export default Index;

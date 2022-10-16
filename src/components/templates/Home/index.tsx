@@ -1,17 +1,16 @@
-import { Layout } from 'antd';
 import { BasicFooter } from 'components/molecules/Footer/Basic';
 import { BasicHeader } from 'components/molecules/Header/Basic';
 
 import { ProductsContextProvider } from './context/Products';
 
-export function HomeTemplate() {
+export const HomeTemplate = () => {
   return (
     <ProductsContextProvider>
       <BasicHeader />
       <Layout.Content>
-        asd
+        Good!
       </Layout.Content>
       <BasicFooter />
     </ProductsContextProvider>
   );
-}
+};
