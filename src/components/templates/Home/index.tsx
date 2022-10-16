@@ -1,4 +1,7 @@
 import { Col, Layout, Row } from 'antd';
+import { AspectRatio } from 'components/molecules/AspectRatio';
+import { Carousel } from 'components/molecules/Carousel';
+import { CarouselBanner } from 'components/molecules/CarouselBanner';
 import { BasicFooter } from 'components/molecules/Footer/Basic';
 import { BasicHeader } from 'components/molecules/Header/Basic';
 import React from 'react';
@@ -19,9 +22,15 @@ export const HomeTemplate: React.FC = () => {
       >
         <div className={Styles.Container}>
           <Row gutter={16}>
-            <Col lg={8}>qwe</Col>
-            <Col lg={8}>qwe</Col>
-            <Col lg={8}>qwe</Col>
+            <Col lg={24}>
+              <Carousel>
+                <AspectRatio
+                  ratio="16/9"
+                >
+                  <CarouselBanner />
+                </AspectRatio>
+              </Carousel>
+            </Col>
           </Row>
         </div>
       </Layout.Content>
