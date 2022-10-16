@@ -1,8 +1,8 @@
-import { CSSProperties, ReactElement } from "react";
+import { CSSProperties, ReactElement, ReactNode } from "react";
 
 export interface ComponentProps {
   id?: string;
   className?: string;
   style?: CSSProperties;
-  children?: ReactElement | ReactElement[];
+  children?: ReactNode | ReactNode[];
 };

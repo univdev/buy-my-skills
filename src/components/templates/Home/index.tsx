@@ -1,11 +1,17 @@
+import { Button, ConfigProvider, Layout } from 'antd';
+import { BasicFooter } from 'components/molecules/Footer/Basic';
+import { BasicHeader } from 'components/molecules/Header/Basic';
+import { ProductsContextProvider } from './context/Products';
 import Styles from './index.module.scss';
 
 export const HomeTemplate = () => {
   return (
-    <div
-      className={Styles.HomeTemplate}
-    >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatem porro iste aliquid, sit, eum dicta corrupti molestiae suscipit earum debitis, quod modi ipsam a aliquam repellat architecto soluta non!
-    </div>
+    <ProductsContextProvider>
+      <BasicHeader></BasicHeader>
+      <Layout.Content>
+        asd
+      </Layout.Content>
+      <BasicFooter></BasicFooter>
+    </ProductsContextProvider>
   );
 };
